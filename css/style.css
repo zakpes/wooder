@@ -63,6 +63,10 @@ a:focus {
 	color: #bea67c;
 }
 
+.container {
+	position: relative;
+}
+
 .navbar-inverse .navbar-brand {
 	color: #fff;
 	font-weight: bold;
@@ -130,6 +134,26 @@ a:focus {
 	background-color: #bea67c;
 }
 
+.icon-bar {
+    transition: all 0.3s ease-in-out;
+    margin-top: 0;
+}
+
+.bar-mid-x {
+    transform: scaleX(0);
+}
+
+.bar-top-x {
+    transform: rotate(45deg);
+    margin-top: 6px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar.bar-bot-x {
+    transform: rotate(-45deg);
+	margin-top: -8px;
+    margin-bottom: 6px;
+}
+
 #hero,
 #furniture,
 #quality,
@@ -152,12 +176,12 @@ a:focus {
 }
 
 #hero .letter {
-	right: -12%;
-	top: 0;
+	right: -19%;
+	top: -8%;
 }
 
 #furniture .letter-f {
-	top: -23%;
+	top: -34%;
 	left: 5%;
 }
 
@@ -167,13 +191,13 @@ a:focus {
 }
 
 #quality .letter {
-	right: 4%;
-	bottom: -33%;
+	right: 2%;
+	bottom: -54%;
 }
 
 #about .letter {
-	right: 4%;
-	top: -33%;
+	right: 2%;
+	top: -88%;
 }
 
 .title-container {
@@ -368,12 +392,14 @@ a:focus {
 	top: 26%;
 	left: -24%;
 	background-color: #000;
+	display: none;
 }
 
 #about .p-line {
 	background-color: #bea67c;
 	top: 55%;
 	left: -8%;
+	display: none;
 }
 
 #about p {
@@ -396,6 +422,10 @@ footer img {
 .link-underline {
 	border-bottom: 1px solid #bea67c;
 	padding-bottom: 2px;
+}
+
+.animate-plus {
+	opacity: 0;
 }
 
 
@@ -480,6 +510,11 @@ footer img {
 
 	#video .btn {
 		padding: 8px 60px;
+	}
+
+	#about .title-line,
+	#about .p-line {
+		display: block;
 	}
 
 	footer img {
