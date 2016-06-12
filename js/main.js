@@ -18,7 +18,14 @@ jQuery(function ($) {
         });
     }
 
+    // Navbar button toggle X
+    $(".navbar-toggle").click(function() {
+        $(".bar-top").toggleClass("bar-top-x");
+        $(".bar-mid").toggleClass("bar-mid-x");
+        $(".bar-bot").toggleClass("bar-bot-x");
+    });
 
+    // Add .animate-plus to all .title-line and .p-line
     $(".title-line").addClass("animate-plus").attr({"data-animations": "fadeInDownBig",
                                                     "data-animation-when-visible": "true",
                                                     "data-animation-delay": "0.2s"});
