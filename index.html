@@ -197,7 +197,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-5 col-lg-6">
                         <h2 class="animate-plus" data-animations="fadeInDown" data-animation-when-visible="true">We do the design of any complexity</h2>
                         <p class="animate-plus" data-animations="fadeInRight" data-animation-when-visible="true" data-animation-delay="0.4s">
-                            This is a team of prefessionals that make the furniture and wood decor high standard.
+                            This is a team of professionals that make the furniture and wood decor high standard.
                             Creating modern designs. Adhering to the global quality standards. And we are doing work with love.
                         </p>
                         <button class="btn btn-default btn-lg animate-plus" data-animations="fadeInLeft" data-animation-when-visible="true" data-animation-delay="0.6s" type="button" name="button"><i class="fa fa-play"></i> Watch video</button>
@@ -213,7 +213,7 @@
 
     <!-- SECTION ABOUT -->
     <section id="about">
-        
+
         <div class="container">
 
             <span class="letter">A</span>
@@ -248,7 +248,7 @@ of the highest class
                     <img src="img/wooder-logo-footer.png" alt="Wooder logo" />
                 </div>
                 <div class="col-xs-12 col-sm-4 col-sm-pull-4">
-                    Copyright &copy; 2016 WOODER
+                    Copyright &copy; <span id="footer-copyright"></span> WOODER
                 </div>
             </div><!-- /.row -->
         </div><!-- /.container -->
@@ -271,6 +271,10 @@ of the highest class
         {
             $( 'a' ).imageLightbox();
         });
+
+        const copyright = document.getElementById("footer-copyright");
+        const d = new Date();
+        copyright.textContent = d.getFullYear();
     </script>
     <script src="js/skrollr.stylesheets.min.js"></script>
     <script src="js/skrollr.min.js"></script>
