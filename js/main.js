@@ -30,7 +30,7 @@ jQuery(function ($) {
                                                     "data-animation-when-visible": "true",
                                                     "data-animation-delay": "0.2s"});
 
-    $(".p-line").addClass("animate-plus").attr({"data-animations": "fadeInUpBig",
+    $(".p-line").addClass("animate-plus").attr({"data-animations": "fadeInUp",
                                                     "data-animation-when-visible": "true",
                                                     "data-animation-delay": "0.4s"});
 });
