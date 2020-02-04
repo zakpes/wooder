@@ -1,6 +1,6 @@
 jQuery(function ($) {
 
-    // Smooth scroll between sections
+    // Smooth scrolling between sections
 
     smoothScroll(1000);
 
